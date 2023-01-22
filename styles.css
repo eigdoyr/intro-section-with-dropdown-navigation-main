@@ -1,0 +1,198 @@
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Epilogue", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.nav-collapse {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.15rem;
+}
+
+.nav-bar {
+  width: 10%;
+  height: 10%;
+}
+
+.nav-menu {
+  background-color: var(--almost-white);
+  overflow-x: hidden;
+  position: absolute;
+  padding: 1rem 1.5rem;
+  height: 100%;
+  width: 65%;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-hidden {
+  display: none;
+}
+
+.nav-close {
+  border: none;
+  background-color: var(--almost-white);
+  float: right;
+}
+
+.nav-menu-collapse {
+  padding-top: 3rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav-menu-collapse a {
+  text-decoration: none;
+  color: var(--medium-gray);
+}
+
+.nav-menu-collapse li {
+  padding: 0.5rem;
+}
+
+.nav-register {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nav-features,
+.nav-company {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.dropdown-list {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.dropdown {
+  border: none;
+  background-color: var(--almost-white);
+}
+
+.icon {
+  height: 12%;
+  width: 12%;
+}
+
+.features-dropdown,
+.company-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.nav-register button:nth-child(1) {
+  border: none;
+  background-color: var(--almost-white);
+  padding: 0.5rem;
+}
+.btn-register {
+  border: 2px solid var(--medium-gray);
+  background-color: var(--almost-white);
+  border-radius: 0.85rem;
+  padding: 0.5rem;
+}
+
+.main-text {
+  text-align: center;
+  padding: 3rem 1.15rem;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+
+.main-lead {
+  color: var(--medium-gray);
+  padding-bottom: 1.75rem;
+}
+
+.main-btn {
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.main-client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.main-client img {
+  width: 20%;
+  height: 20%;
+}
